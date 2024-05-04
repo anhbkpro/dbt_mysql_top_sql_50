@@ -1,11 +1,13 @@
 version: 2
 
 models:
-  - name: recyclable_and_low_fat_products
+  - name: fct_recyclable_and_low_fat_products
     description: "1757. Recyclable and Low Fat Products dbt model"
     columns:
-      - name: id
+      - name: product_id
         description: "The primary key for this table"
         tests:
           - unique
           - not_null
+          - accepted_values:
+              values: [1, 3]
