@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: leetcode_db
+    description: "Database for LeetCode SQL problems"
+    schema: top-sql-50
+    tables:
+      - name: recyclable_and_low_fat_products
