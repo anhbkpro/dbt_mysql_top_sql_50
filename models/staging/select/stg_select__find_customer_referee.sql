@@ -3,16 +3,16 @@ with
         select
             *
         from
-            {{ source('leetcode_db', 'products__recyclable_and_low_fat_products') }}
+            {{ source('leetcode_db', 'customers__find_customer_referee') }}
     ),
     renamed as (
         select
             -- ids
-            product_id as id,
+            id,
+            referee_id as referee_id,
 
             -- strings
-            low_fats as low_fat,
-            recyclable as recyclable
+            name as name
 
             -- numerics
 

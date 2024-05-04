@@ -5,4 +5,5 @@ sources:
     description: "Database for LeetCode SQL problems"
     schema: top-sql-50
     tables:
-      - name: recyclable_and_low_fat_products
+      - name: products__recyclable_and_low_fat_products
+      - name: customers__find_customer_referee

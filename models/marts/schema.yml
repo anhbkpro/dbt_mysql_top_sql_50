@@ -1,6 +1,16 @@
 version: 2
 
 models:
+  - name: fct_find_customer_referee
+    description: "584. Find Customer Referee"
+    columns:
+      - name: name
+        description: "The name of the customer"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: ["Will", "Jane", "Bill", "Zack"]
   - name: fct_recyclable_and_low_fat_products
     description: "1757. Recyclable and Low Fat Products dbt model"
     columns:
