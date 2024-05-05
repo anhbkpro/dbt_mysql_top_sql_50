@@ -3,7 +3,7 @@ with
         select
             *
         from
-            {{ source('leetcode_db', 'world__big_countries') }}
+            {{ source('leetcode_db_select', 'world__big_countries') }}
     ),
     renamed as (
         select

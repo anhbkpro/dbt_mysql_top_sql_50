@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: leetcode_db
+  - name: leetcode_db_select
     description: "Database for LeetCode SQL problems"
     schema: top-sql-50
     tables:

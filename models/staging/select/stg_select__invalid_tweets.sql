@@ -3,7 +3,7 @@ with
         select
             *
         from
-            {{ source('leetcode_db', 'tweets__invalid_tweets') }}
+            {{ source('leetcode_db_select', 'tweets__invalid_tweets') }}
     ),
     renamed as (
         select

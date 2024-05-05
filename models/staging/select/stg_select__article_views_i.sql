@@ -1,6 +1,6 @@
 with
     source as (
-        select * from {{ source('leetcode_db', 'views__article_views_i') }}
+        select * from {{ source('leetcode_db_select', 'views__article_views_i') }}
     ),
     renamed as (
         select

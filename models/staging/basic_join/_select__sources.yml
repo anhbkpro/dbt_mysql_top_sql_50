@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: leetcode_db_basic_join
+    description: "Database for LeetCode SQL problems"
+    schema: top-sql-50
+    tables:
+      - name: Employees
+      - name: EmployeeUNI

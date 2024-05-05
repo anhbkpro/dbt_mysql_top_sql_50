@@ -51,3 +51,18 @@ models:
           - not_null
           - accepted_values:
               values: [2]
+  - name: fct_replace_employee_id_with_the_unique_identifier
+    description: "1378. Replace Employee ID With The Unique Identifier"
+    columns:
+      - name: unique_id
+        description: "The unique id of the employee"
+        tests:
+          - accepted_values:
+              values: [1, 2, 3, null]
+      - name: name
+        description: "The name of the employee"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: ["Alice", "Bob", "Meir", "Winston", "Jonathan"]

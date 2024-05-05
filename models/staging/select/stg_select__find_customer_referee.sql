@@ -3,7 +3,7 @@ with
         select
             *
         from
-            {{ source('leetcode_db', 'customers__find_customer_referee') }}
+            {{ source('leetcode_db_select', 'customers__find_customer_referee') }}
     ),
     renamed as (
         select

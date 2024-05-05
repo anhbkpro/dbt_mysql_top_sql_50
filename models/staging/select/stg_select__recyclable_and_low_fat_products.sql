@@ -3,7 +3,7 @@ with
         select
             *
         from
-            {{ source('leetcode_db', 'products__recyclable_and_low_fat_products') }}
+            {{ source('leetcode_db_select', 'products__recyclable_and_low_fat_products') }}
     ),
     renamed as (
         select
