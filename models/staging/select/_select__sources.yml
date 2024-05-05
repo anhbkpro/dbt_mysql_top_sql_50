@@ -7,3 +7,4 @@ sources:
     tables:
       - name: products__recyclable_and_low_fat_products
       - name: customers__find_customer_referee
+      - name: world__big_countries
