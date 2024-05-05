@@ -41,3 +41,13 @@ models:
           - not_null
           - accepted_values:
               values: [4, 7]
+  - name: fct_invalid_tweets
+    description: "1683. Invalid Tweets"
+    columns:
+      - name: tweet_id
+        description: "The id of the tweet"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: [2]
