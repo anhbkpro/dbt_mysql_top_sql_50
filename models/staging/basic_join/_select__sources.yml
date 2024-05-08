@@ -7,3 +7,5 @@ sources:
     tables:
       - name: Employees
       - name: EmployeeUNI
+      - name: Product
+      - name: Sales
