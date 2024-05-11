@@ -9,3 +9,5 @@ sources:
       - name: EmployeeUNI
       - name: Product
       - name: Sales
+      - name: Visits
+      - name: Transactions

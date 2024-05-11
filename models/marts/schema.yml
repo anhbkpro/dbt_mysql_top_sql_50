@@ -88,3 +88,19 @@ models:
           - not_null
           - accepted_values:
               values: [5000, 9000]
+  - name: fct_customer_not_make_any_transactions
+    description: "1581. Customer Who Visited but Did Not Make Any Transactions"
+    columns:
+      - name: customer_id
+        description: "The id of the customer"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: [30, 54, 96]
+      - name: count_no_trans
+        description: "The number of transactions"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2]
