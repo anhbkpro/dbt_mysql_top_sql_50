@@ -104,3 +104,14 @@ models:
           - not_null
           - accepted_values:
               values: [1, 2]
+
+  - name: fct_rising_temperature
+    description: "197. Rising Temperature"
+    columns:
+      - name: id
+        description: "The id of the weather"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: [2, 4]
