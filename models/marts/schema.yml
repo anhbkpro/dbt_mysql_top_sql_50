@@ -131,3 +131,19 @@ models:
           - not_null
           - accepted_values:
               values: [0.894, 0.995, 1.456]
+  - name: fct_employee_bonus
+    description: "577. Employee Bonus"
+    columns:
+      - name: name
+        description: "The name of the employee"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: ["Brad", "John", "Dan"]
+
+      - name: bonus
+        description: "The bonus of the employee"
+        tests:
+          - accepted_values:
+              values: [null, 500]

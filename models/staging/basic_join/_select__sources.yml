@@ -13,3 +13,5 @@ sources:
       - name: Transactions
       - name: Weather
       - name: Activity
+      - name: Employee
+      - name: Bonus
