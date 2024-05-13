@@ -12,3 +12,4 @@ sources:
       - name: Visits
       - name: Transactions
       - name: Weather
+      - name: Activity

@@ -115,3 +115,19 @@ models:
           - not_null
           - accepted_values:
               values: [2, 4]
+  - name: fct_average_time_of_process_per_machine
+    description: "1661. Average Time of Process per Machine"
+    columns:
+      - name: machine_id
+        description: "The id of the machine"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: [0, 1, 2]
+      - name: processing_time
+        description: "The processing time"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [0.894, 0.995, 1.456]
