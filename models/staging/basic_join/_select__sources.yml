@@ -15,3 +15,6 @@ sources:
       - name: Activity
       - name: Employee
       - name: Bonus
+      - name: Students
+      - name: Subjects
+      - name: Examinations

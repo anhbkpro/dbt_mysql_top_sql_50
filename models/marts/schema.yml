@@ -147,3 +147,18 @@ models:
         tests:
           - accepted_values:
               values: [null, 500]
+  - name: fct_students_and_examinations
+    description: "1280. Students and Examinations"
+    columns:
+      - name: subject_name
+        description: "The name of the subject"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["Math", "Physics", "Programming"]
+      - name: attended_exams
+        description: "The number of exams attended by the student"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [0, 1, 2, 3]
