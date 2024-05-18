@@ -162,3 +162,13 @@ models:
           - not_null
           - accepted_values:
               values: [0, 1, 2, 3]
+  - name: fct_managers_with_at_least_5_direct_reports
+    description: "570. Managers with at Least 5 Direct Reports"
+    columns:
+      - name: name
+        description: "The name of the manager"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: ["John"]
