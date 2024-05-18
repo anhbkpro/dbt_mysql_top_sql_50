@@ -172,3 +172,19 @@ models:
           - not_null
           - accepted_values:
               values: ["John"]
+  - name: fct_confirmation_rate
+    description: "1934. Confirmation Rate"
+    columns:
+      - name: user_id
+        description: "The id of the user"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: [2, 3, 6, 7]
+      - name: confirmation_rate
+        description: "The confirmation rate"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [0.00, 0.50, 1.00]

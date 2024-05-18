@@ -19,3 +19,5 @@ sources:
       - name: Subjects
       - name: Examinations
       - name: lc570_Employee
+      - name: Signups
+      - name: Confirmations
