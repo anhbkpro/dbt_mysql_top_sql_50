@@ -230,3 +230,19 @@ models:
           - not_null
           - accepted_values:
               values: [2.00, 2.50]
+  - name: fct_percentage_of_users_attended_a_contest
+    description: "1633. Percentage of Users Attended a Contest"
+    columns:
+      - name: contest_id
+        description: "The id of the contest"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: [208, 209, 210, 215, 207]
+      - name: percentage
+        description: "The percentage of users attended a contest"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [100.0, 66.67, 33.33]

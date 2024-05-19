@@ -10,3 +10,5 @@ sources:
       - name: UnitsSold
       - name: lc1075_Employee
       - name: lc1075_Project
+      - name: Users
+      - name: Register
