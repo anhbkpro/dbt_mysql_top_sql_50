@@ -6,6 +6,12 @@ Try running the following commands:
 
 - dbt run
 - dbt test
+- to run a specific model:
+
+```bash
+dbt run -m fct_project_employees_i
+dbt test -m fct_project_employees_i
+```
 
 ### Resources:
 
