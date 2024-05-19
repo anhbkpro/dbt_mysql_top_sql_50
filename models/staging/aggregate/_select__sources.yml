@@ -8,3 +8,5 @@ sources:
       - name: cinema
       - name: Prices
       - name: UnitsSold
+      - name: lc1075_Employee
+      - name: lc1075_Project

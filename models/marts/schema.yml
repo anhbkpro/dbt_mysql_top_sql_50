@@ -214,3 +214,19 @@ models:
           - not_null
           - accepted_values:
               values: [6.96, 16.96]
+  - name: fct_project_employees_i
+    description: "1075. Project Employees I"
+    columns:
+      - name: project_id
+        description: "The id of the project"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: [1, 2]
+      - name: average_years
+        description: "The average years of the employees"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [2.00, 2.50]
