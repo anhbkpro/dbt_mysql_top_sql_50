@@ -188,3 +188,13 @@ models:
           - not_null
           - accepted_values:
               values: [0.00, 0.50, 1.00]
+  - name: fct_not_boring_movies
+    description: "620. Not Boring Movies"
+    columns:
+      - name: id
+        description: "The id of the movie"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: [1, 5]
