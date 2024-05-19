@@ -198,3 +198,19 @@ models:
           - not_null
           - accepted_values:
               values: [1, 5]
+  - name: fct_average_selling_price
+    description: "1251. Average Selling Price"
+    columns:
+      - name: product_id
+        description: "The id of the product"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: [1, 2]
+      - name: average_price
+        description: "The average price of the product"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [6.96, 16.96]

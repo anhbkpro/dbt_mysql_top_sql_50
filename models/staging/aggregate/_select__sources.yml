@@ -6,3 +6,5 @@ sources:
     schema: top-sql-50
     tables:
       - name: cinema
+      - name: Prices
+      - name: UnitsSold
