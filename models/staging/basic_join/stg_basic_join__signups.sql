@@ -10,4 +10,5 @@ with
         from source
     )
 
+-- Each row contains information about the signup time for the user with ID user_id.
 select * from renamed
