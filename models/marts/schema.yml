@@ -246,3 +246,25 @@ models:
           - not_null
           - accepted_values:
               values: [100.0, 66.67, 33.33]
+  - name: fct_queries_quality_and_percentage
+    description: "1211. Queries Quality and Percentage"
+    columns:
+      - name: query_name
+        description: "The name of the query"
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: ["Dog", "Cat"]
+      - name: quality
+        description: "The quality of the query"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [2.50, 0.66]
+      - name: poor_query_percentage
+        description: "The percentage of poor queries"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [33.33]

@@ -12,3 +12,4 @@ sources:
       - name: lc1075_Project
       - name: Users
       - name: Register
+      - name: Queries
