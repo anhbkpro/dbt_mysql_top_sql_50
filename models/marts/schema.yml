@@ -268,3 +268,18 @@ models:
           - not_null
           - accepted_values:
               values: [33.33]
+  - name: fct_monthly_transactions_i
+    description: "1193. Monthly Transactions I"
+    columns:
+      - name: month
+        description: "The month"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["2018-12", "2019-01"]
+      - name: country
+        description: "The country"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["US", "DE"]
