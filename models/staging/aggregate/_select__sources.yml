@@ -13,3 +13,4 @@ sources:
       - name: Users
       - name: Register
       - name: Queries
+      - name: lc1193_Transactions
